@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
   }
-}
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  nav {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #0e6f9f;
+  color: white;
+  }
+  
+  .navbar-img {
+  width: 150px;
+  }
+  
+  * {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  .searchbar-container {
+  display: flex;
+  margin: 20px auto;
+  max-width: 500px;
+  align-items: center;
+  }
+  
+  .searchbar {
+  background-color: white;
+  margin-right: 10px;
+  flex: 1;
+  }
+  
+  .searchbar input {
+  width: 100%;
+  padding: 12px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border: none;
+  font-size: 16px;
+  }
+  
+  .searchbar-btn button {
+  background-color: #ffcb05;
+  border: none;
+  border-radius: 10px;
+  height: 44px;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  }
+  
+  .searchbar-btn button:hover {
+  background-color: #e6b800;
+  }
+  
+  
+  .pokedex-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  .pokedex-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+  }
+  
+  
+  .pokemon-card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  }
+  
+  .pokemon-card:hover {
+  transform: scale(1.02);
+  }
+  
+  
+  .pokemon-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  object-fit: contain;
+  }
+  
+  .pokemon-image-container {
+  padding: 10px;
+  border-right: 1px solid #f2f2f2;
+  }
+  
+ 
+  .card-body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  flex: 1;
+  }
+  
+  .card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .card-top h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
   }
-}
+
+
