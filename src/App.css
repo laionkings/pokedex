@@ -131,4 +131,21 @@ nav {
 .App {
   text-align: center;
 }
- 
+
+@media only screen and (max-width: 768px) {
+  .pokedex-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .pokemon-card {
+    flex-direction: column;
+  }
+  
+  .pokemon-image-container {
+    padding: 5px;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+}
