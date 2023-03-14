@@ -4,7 +4,7 @@ import FavoriteContext from "../Contexts/favoritesContexts";
 const Navbar = () => {
   const { favoritePokemons } = useContext(FavoriteContext);
   const logoImg =
-    "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png";
+    "https://logodownload.org/wp-content/uploads/2017/08/pokemon-logo-8.png";
   return (
     <nav>
       <div>
