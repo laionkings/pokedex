@@ -11,7 +11,8 @@ const Searchbar = (props) => {
     }
 
     const onButtonClickHandler = () => {
-        onSearch(search)
+        const searchTerm = search.toLowerCase() // converte o valor de pesquisa para letras minúsculas
+        onSearch(searchTerm)
     }
 
     return (
